@@ -20,7 +20,7 @@ app.use(session({
 
 
 app.post('/auth/register', ctr1.registerUser)
-
+app.post('/auth/login', ctr1.loginUser)
 
 
 

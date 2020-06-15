@@ -1,0 +1,81 @@
+.Auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(99deg,#ff70a6,#ff9770 40%,#ffd670 73%,#e9ff70);
+    position: relative;
+    top: 0;
+    left: 0;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+}
+.main-box{
+    
+    border-radius: 8px;
+    position: absolute;
+    
+    box-shadow: 0 14px 28px 0 rgba(0,0,0,.25), 0 10px 10px 0 rgba(0,0,0,.26);
+    /* align-self: center; */
+    top: 22.5%;
+    right: 32.5%;
+    
+    background-image: linear-gradient(97deg,#ff7a6e,#ffd670);
+    width: 35vw;
+    height: 55vh;
+    
+    
+    flex-direction: column;
+    
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.main-box.img{
+    width: 50px;
+    height: 10px;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+    box-sizing: initial;
+    height: 35px;
+}
+
+p{
+    font-size: 30px;
+}
+.input-box2{
+    width: 60%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    
+}
+
+.buttonss{
+    font-size: 20px;
+    border-radius: 1px;
+    height: 50px;
+    width: 110px;
+   text-emphasis: font;
+    background-image: radial-gradient(circle at 50% -46%,#737373,#403d39);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+}

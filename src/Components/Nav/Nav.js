@@ -1,17 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import './Nav.css'
-export default class Nav extends Component{
-    constructor(){
-        super()
-    }
+import {connect} from 'react-redux'
+// import {username, profile_pic} from '../../ducks/reducer'
+import {withRouter} from 'react-router-dom'
 
 
-    render(){
-        
+function Nav (props){
+    // constructor(props){
+    //     super(props)
+    // }
+
+
+    // render(){
+        // console.log(props)
 
         return(
             <div className = "nav-box">
+                <img src = {`${props.profile_pic}`} alt="profile pic"/>
+                <p>{`${props.username}`}</p>
                 < Link to = '/dashboard'>
                 <button>Home</button>
                 </Link>
@@ -24,4 +31,10 @@ export default class Nav extends Component{
             </div>
         )
     }
-}
+// }
+
+
+const mapStateToProps = reduxState => reduxState
+// const {username} = initialState
+
+export default connect(mapStateToProps)(withRouter(Nav))
